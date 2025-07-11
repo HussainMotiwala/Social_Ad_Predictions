@@ -6,8 +6,8 @@ model = pickle.load(open("Social_Network_Ads.pkl","rb"))
 
 st.title("Social Network Ads Prediction")
 
-age = st.number_input("Enter Age",18)
-salary = st.number_input("Enter Estimated Salary",10000)
+age = st.number_input("Enter Age", value = 18)
+salary = st.number_input("Enter Estimated Salary", value = 10000)
 
 features = np.array([[age, salary]])
 
